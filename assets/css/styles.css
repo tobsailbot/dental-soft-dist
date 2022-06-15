@@ -1,0 +1,257 @@
+
+
+
+
+
+
+
+.diente-zoom{
+    position: relative;
+    margin: auto;
+    width: 164px;
+    height: 164px;
+    /*background-color: rgb(135, 135, 135);*/
+    box-shadow: 5px 5px 18px #888888;
+  }
+
+  .overlap-label-zoom{
+    position: absolute;
+    width: 185px;
+    
+    left: -10px;
+    top: -10px;
+    pointer-events: none;
+    z-index: 99;
+  }
+
+  .cara-label{
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    transform: rotate(-90deg);
+    left: 7px;
+    background-color: #00000000;
+    border-radius: 50%;
+    height: 36px;
+    width: 36px;
+    text-align: center;
+    padding-top: 2px;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    pointer-events: none;
+
+  }
+    .l-arriba{
+      left: -2px;
+    }
+    .l-abajo{
+      left: -2px;
+    }
+    .l-izquierda{
+      left: -2px;
+    }
+    .l-derecha{
+      left: 55px;
+    }
+  
+  .cara {
+    position:relative;
+    outline: transparent;
+    border: 3px solid ;  
+    border-radius: 2px;
+  }
+  
+  .caraArriba {
+    width: 110px;
+    height: 165px;
+    clip-path: polygon(0 0, 44% 25%, 44% 72%, 0% 100%);
+    transform: rotate(90deg);
+    top: -29px;
+    left: 28px;
+    background-color: #b8b8b8;
+    z-index: 2;
+  }
+  
+  .caraIzquierda {
+      width: 109px;
+      height: 166px;
+      clip-path: polygon(0 0, 44% 25%, 44% 75%, 0% 100%);
+      top: -166px;
+      background-color: #c9c9c9;
+      z-index: 1;
+  }
+  
+  .caraDerecha {
+      width: 109px;
+      height: 166px;
+      clip-path: polygon(55% 29%, 100% 0, 100% 100%, 55% 75%);
+      left: 57px;
+      top: -402px;
+      background-color: #e1e1e1;
+      z-index: 3;
+  }
+  
+  .caraAbajo {
+    width: 107px;
+    height: 166px;
+    clip-path: polygon(0 0, 46% 29%, 46% 70%, 0% 100%);
+    transform: rotate(-90deg);
+    top: -538px;
+    left: 29px;
+    background-color: #a4a4a4;
+    z-index: 4;
+  }
+  
+  .caraCentro {
+      width: 70px;
+      height: 70px;
+      clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+      right: -47px;
+      top: -285px;
+      background-color: #d5d5d5;
+      z-index: 5;
+  }
+  
+  .caraArriba:hover, .caraIzquierda:hover, .caraDerecha:hover, .caraCentro:hover, .caraAbajo:hover {
+      background-color: rgb(81, 182, 255);
+      cursor: pointer;
+  }
+  
+  .caraArriba:focus, .caraIzquierda:focus, .caraDerecha:focus, .caraCentro:focus, .caraAbajo:focus {
+    background-color: rgb(0, 157, 193);
+  }
+
+
+  .diente-mini{
+    position: relative;
+    display: flex;
+    background-color: rgb(135, 135, 135);
+    width: 55px;
+    height: 55px;
+    box-shadow: 2px 2px 2px #888888;
+    margin-right: auto;
+  }
+
+  .diente-label{
+    position: relative;
+    display: flex;
+    width: 55px;
+    height: 25px;
+    font-weight: 500;
+    margin-right: auto;
+  }
+
+  .diente-mini:hover{
+    transform: translate3d(0, -3px, 0);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    box-shadow: 2px 2px 6px #888888;
+  }
+
+  .label-mini{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    background-color: #00000000;
+    border-radius: 50%;
+    height: 13px;
+    width: 13px;
+    user-select: none;
+    pointer-events: none;
+    z-index: 99;
+    margin: 1px;
+
+  }
+    .lm-arriba{
+      left: 19px;
+    }
+    .lm-izquierda{
+      top: 19px;
+    }
+    .lm-derecha{
+      left: 38px;
+      top: 19px;
+    }
+    .lm-abajo{
+      left: 19px;
+      top: 38px;
+    }
+    .lm-centro{
+      left: 19px;
+      top: 19px;
+    }
+
+  .overlap-label{
+    position: absolute;
+    width: 65px;
+    z-index: 1;
+    left: -5px;
+    top: -5px;
+    pointer-events: none;
+  }
+
+  .diente-number{
+    margin: auto;
+  }
+
+
+
+  
+  /* X-Large devices (large desktops, 1200px and up)*/
+@media (max-width: 1200px) {
+
+    .diente-mini{
+        position: relative;
+        display: flex;
+        background-color: rgb(135, 135, 135);
+        width: 45px;
+        height: 45px;
+        box-shadow: 2px 2px 2px #888888;
+        margin-right: auto;
+      }
+
+    .diente-label{
+        width: 45px ;
+    }  
+    
+    .diente-number{
+        margin:auto;
+    }
+
+    .overlap-label {
+        width: 57px;
+        left: -7px;
+        top: -7px;
+    }
+
+    .label-mini {
+        height: 9px;
+        width: 9px;
+    }
+
+    .lm-arriba {
+        left: 16px;
+    }
+
+    .lm-izquierda {
+        top: 18px;
+    }
+    
+    .lm-derecha {
+        left: 32px;
+        top: 18px;
+    }
+
+    .lm-abajo {
+        left: 16px;
+        top: 33px;
+    }
+
+    .lm-centro {
+        left: 16px;
+        top: 17px;
+    }
+}
